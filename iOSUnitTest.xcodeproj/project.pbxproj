@@ -14,7 +14,18 @@
 		890DE3A8290DA12F00C6F86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890DE3A7290DA12F00C6F86C /* Assets.xcassets */; };
 		890DE3AB290DA12F00C6F86C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890DE3A9290DA12F00C6F86C /* LaunchScreen.storyboard */; };
 		890DE3B3290DA1E600C6F86C /* Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DE3B2290DA1E600C6F86C /* Arithmetic.swift */; };
+		890DE3BB290DA4CC00C6F86C /* iOSUnitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DE3BA290DA4CC00C6F86C /* iOSUnitTestTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		890DE3BC290DA4CC00C6F86C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 890DE393290DA12B00C6F86C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 890DE39A290DA12B00C6F86C;
+			remoteInfo = iOSUnitTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		890DE39B290DA12B00C6F86C /* iOSUnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSUnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,19 @@
 		890DE3AA290DA12F00C6F86C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		890DE3AC290DA12F00C6F86C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		890DE3B2290DA1E600C6F86C /* Arithmetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arithmetic.swift; sourceTree = "<group>"; };
+		890DE3B8290DA4CB00C6F86C /* iOSUnitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUnitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		890DE3BA290DA4CC00C6F86C /* iOSUnitTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUnitTestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		890DE398290DA12B00C6F86C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890DE3B5290DA4CB00C6F86C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				890DE39D290DA12B00C6F86C /* iOSUnitTest */,
+				890DE3B9290DA4CC00C6F86C /* iOSUnitTestTests */,
 				890DE39C290DA12B00C6F86C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				890DE39B290DA12B00C6F86C /* iOSUnitTest.app */,
+				890DE3B8290DA4CB00C6F86C /* iOSUnitTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +90,14 @@
 				890DE3B2290DA1E600C6F86C /* Arithmetic.swift */,
 			);
 			path = iOSUnitTest;
+			sourceTree = "<group>";
+		};
+		890DE3B9290DA4CC00C6F86C /* iOSUnitTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				890DE3BA290DA4CC00C6F86C /* iOSUnitTestTests.swift */,
+			);
+			path = iOSUnitTestTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +120,24 @@
 			productReference = 890DE39B290DA12B00C6F86C /* iOSUnitTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		890DE3B7290DA4CB00C6F86C /* iOSUnitTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 890DE3BE290DA4CC00C6F86C /* Build configuration list for PBXNativeTarget "iOSUnitTestTests" */;
+			buildPhases = (
+				890DE3B4290DA4CB00C6F86C /* Sources */,
+				890DE3B5290DA4CB00C6F86C /* Frameworks */,
+				890DE3B6290DA4CB00C6F86C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				890DE3BD290DA4CC00C6F86C /* PBXTargetDependency */,
+			);
+			name = iOSUnitTestTests;
+			productName = iOSUnitTestTests;
+			productReference = 890DE3B8290DA4CB00C6F86C /* iOSUnitTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +150,10 @@
 				TargetAttributes = {
 					890DE39A290DA12B00C6F86C = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					890DE3B7290DA4CB00C6F86C = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 890DE39A290DA12B00C6F86C;
 					};
 				};
 			};
@@ -119,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				890DE39A290DA12B00C6F86C /* iOSUnitTest */,
+				890DE3B7290DA4CB00C6F86C /* iOSUnitTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +184,13 @@
 				890DE3AB290DA12F00C6F86C /* LaunchScreen.storyboard in Resources */,
 				890DE3A8290DA12F00C6F86C /* Assets.xcassets in Resources */,
 				890DE3A6290DA12C00C6F86C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		890DE3B6290DA4CB00C6F86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +208,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		890DE3B4290DA4CB00C6F86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890DE3BB290DA4CC00C6F86C /* iOSUnitTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		890DE3BD290DA4CC00C6F86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 890DE39A290DA12B00C6F86C /* iOSUnitTest */;
+			targetProxy = 890DE3BC290DA4CC00C6F86C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		890DE3A4290DA12C00C6F86C /* Main.storyboard */ = {
@@ -340,6 +416,50 @@
 			};
 			name = Release;
 		};
+		890DE3BF290DA4CC00C6F86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWWB8679GU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelcomp.iOSUnitTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSUnitTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOSUnitTest";
+			};
+			name = Debug;
+		};
+		890DE3C0290DA4CC00C6F86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CWWB8679GU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelcomp.iOSUnitTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSUnitTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOSUnitTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -357,6 +477,15 @@
 			buildConfigurations = (
 				890DE3B0290DA12F00C6F86C /* Debug */,
 				890DE3B1290DA12F00C6F86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		890DE3BE290DA4CC00C6F86C /* Build configuration list for PBXNativeTarget "iOSUnitTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				890DE3BF290DA4CC00C6F86C /* Debug */,
+				890DE3C0290DA4CC00C6F86C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
